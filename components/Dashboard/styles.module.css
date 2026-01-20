@@ -24,10 +24,11 @@
   display: flex;
   align-items: center;
   gap: 16px;
-  background: #FFF;
+  background: #1C5496;
   padding: 10px 16px;
   border-radius: 8px;
   min-width: 266px;
+  color: #FFF;
 }
 
 .sunIcon {
@@ -37,7 +38,7 @@
 }
 
 .brandName {
-  color: #545F71;
+  color: #FFF;
   font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
   font-size: 24px;
   font-weight: 700;
@@ -254,7 +255,7 @@
 }
 
 .btnPrimary {
-  background: #545F71;
+  background: #256EE6;
   color: #FFF;
 }
 
@@ -322,6 +323,48 @@
   font-weight: 400;
   line-height: 22px;
   letter-spacing: -0.32px;
+}
+
+/* Tab Title */
+.tabTitle {
+  color: #545F71;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: -0.56px;
+  margin: 0 0 24px 0;
+}
+
+/* Empty State */
+.emptyState {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 24px;
+  background: #FFF;
+  border-radius: 12px;
+  min-height: 300px;
+  text-align: center;
+}
+
+.emptyState h2 {
+  color: #545F71;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  margin: 0 0 12px 0;
+}
+
+.emptyState p {
+  color: #9BA5B7;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  margin: 0;
 }
 
 /* Responsive adjustments */
