@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import styles from "./styles.module.css";
 
 interface TableRow {
@@ -13,11 +13,18 @@ interface DashboardProps {
   balance?: string;
 }
 
+type TabType = "dashboard" | "events" | "users";
+
 function Dashboard({ balance = "$ 1,893.44" }: DashboardProps) {
+  const [activeTab, setActiveTab] = useState<TabType>("dashboard");
+
   const tableData: TableRow[] = [
     { id: 1, name: "Darlene Robertson", dateOfBirth: "02/07/1971", jobTitle: "Dog Trainer" },
     { id: 2, name: "Ronald Richards", dateOfBirth: "28/03/1968", jobTitle: "Marketing Head" },
     { id: 3, name: "Jenone Bell", dateOfBirth: "12/08/1985", jobTitle: "President of Sales" },
+    { id: 4, name: "Kathryn Murphy", dateOfBirth: "15/11/1990", jobTitle: "Sales Manager" },
+    { id: 5, name: "Jacob Jones", dateOfBirth: "22/05/1988", jobTitle: "Software Engineer" },
+    { id: 6, name: "Bessie Cooper", dateOfBirth: "08/09/1992", jobTitle: "UX Designer" },
   ];
 
   return (
